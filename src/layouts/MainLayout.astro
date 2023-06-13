@@ -1,0 +1,30 @@
+---
+import Navigation from "../Components/Navigation.astro";
+import Footer from "../Components/Footer.astro";
+import NavBar from '../Components/NavBar.jsx';
+import Header from "../Components/Header.astro"
+
+
+---
+
+<html lang="en">
+	<Header test=""/>
+
+	<body>	
+        <main>
+			<NavBar client:load/>
+            <slot>
+            </slot>
+        </main>
+
+		
+    </body>
+
+</html>
+
+
+<style>
+	.hidden {
+		display: none;
+	}
+</style>

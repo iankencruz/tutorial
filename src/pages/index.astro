@@ -1,16 +1,43 @@
 ---
+import '../styles/styles.css'
+import MainLayout from '../layouts/MainLayout.astro'
+import Card from '../Components/Card.astro';
+
+
+const title = "Tutorial Astro Project";
+let newSum = 4 + 5;
+
+
+const happy = true;
+const finished = false;
+const goal = 3;
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-		<h1>My Astro Site</h1>
-	</body>
-</html>
+
+
+<MainLayout>
+	<div>
+		<h1 class="text-center text-2xl">TEST</h1>
+		<h1 class="text-center text-2xl">TEST</h1>
+		<h1 class="text-center text-2xl">TEST</h1>
+		<h1 class="text-center text-2xl">TEST</h1>
+		<h1 class="text-center text-2xl">TEST</h1>
+		<h1 class="text-center text-2xl">TEST</h1>
+		<h1 class="text-center text-2xl">TEST</h1>
+	</div>
+	<div class="gridwrapper mx-8 my-8">
+		<div class="grid lg:grid-cols-3 lg:grid-rows-3 md:grid-cols-2 md:grid-rows-2"> 
+			<Card title="Asset Designer" location="ACT" rfqdate="12/12/12" contract="12 Month" department="DFAT" url="https://www.youtube.com/"/>
+			<Card title="Asset Designer" location="ACT" rfqdate="12/12/12" contract="12 Month" department="DFAT" url="https://www.youtube.com/"/>
+			<Card title="Asset Designer" location="ACT" rfqdate="12/12/12" contract="12 Month" department="DFAT" url="https://www.youtube.com/"/>
+			<Card title="Asset Designer" location="ACT" rfqdate="12/12/12" contract="12 Month" department="DFAT" url="https://www.youtube.com/"/>
+			<Card title="Asset Designer" location="ACT" rfqdate="12/12/12" contract="12 Month" department="DFAT" url="https://www.youtube.com/"/>
+			<Card title="Asset Designer" location="ACT" rfqdate="12/12/12" contract="12 Month" department="DFAT" url="https://www.youtube.com/"/>
+			<Card title="Asset Designer" location="ACT" rfqdate="12/12/12" contract="12 Month" department="DFAT" url="https://www.youtube.com/"/>
+			<Card title="Asset Designer" location="ACT" rfqdate="12/12/12" contract="12 Month" department="DFAT" url="https://www.youtube.com/"/>
+			<Card title="Asset Designer" location="ACT" rfqdate="12/12/12" contract="12 Month" department="DFAT" url="https://www.youtube.com/"/>
+		</div>
+	</div class="gridwrapper">
+</MainLayout>
+
+

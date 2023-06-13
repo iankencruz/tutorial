@@ -1,0 +1,37 @@
+---
+
+
+const { title, rfqdate, department, location, contract, url } = Astro.props;
+---
+
+
+<section class="opportunity-section">
+    
+    
+        <div class="bg-red-300 mx-2 my-2 py-2 lg:grid-cols-3">
+            <div class="">
+                <a href="#">
+                    <h2 class="title text-2xl font-bold mx-auto px-7 py-4">{title}</h2>
+                </a>
+                    <div class="flex flex-wrap">
+                        
+                        <h4 class="location text-lg text-left px-7 py-1"> <strong>Location:</strong> {location}</h4>
+                        <h4 class="contract text-lg text-left px-7 py-1"> <strong>Contract Type:</strong> {contract}</h4>
+                        <h4 class="department text-lg text-left px-7 py-1"><strong>Department:</strong> {department}</h4>                
+                        <h4 class="rfqdate text-lg text-left px-7 py-1"> <strong>RFQ Due Date</strong>{rfqdate}</h4>
+                    </div>
+                    <div class="flex flex-row"></div>
+
+                <p class="department text-lg mx-auto px-7 py-4">Lorem Ipsum adwadha Lorem Ipsum adwadhaLorem Ipsum adwadhaLorem Ipsum adwadhaLorem Ipsum adwadhaLorem Ipsum adwadhaLorem Ipsum adwadha</p>
+                <button type="button" class="department text-lg mx-auto px-7 py-4 font-bold" ><a href={url}>Read More</a></button>
+            </div>
+        </div>
+    
+    
+</section>
+
+
+
+
+
+
